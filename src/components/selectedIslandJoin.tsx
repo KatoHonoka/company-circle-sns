@@ -99,8 +99,8 @@ const deletedIslandName = joinIslandData[index]; // 参加島の名前を取得�
           {dataLoaded &&
             joinIslandData.map((islandName, index) =>
               islandName !== null ? (
-                <div className={styles.nameFlex}>
-                    <div key={index} className={styles.selectedValue}>
+                <div className={styles.nameFlex} key={index}>
+                    <div className={styles.selectedValue}>
                     <div className={styles.nameFlex}>
                         <span className={styles.nowrap}>                  
                                 {islandName}
