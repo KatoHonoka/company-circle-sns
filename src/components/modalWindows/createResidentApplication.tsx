@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import styles from "../../styles/createSendingMessage.module.css";
 import { supabase } from "../../createClient";
 import { useParams } from "react-router-dom";

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { supabase } from "../createClient";
 import styles from "../styles/message.module.css";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import LogSt from "./cookie/logSt";

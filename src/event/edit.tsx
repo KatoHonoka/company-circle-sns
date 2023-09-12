@@ -7,17 +7,14 @@ import { supabase } from "../createClient";
 import CreateDeletePage from "../components/modalWindows/deleteEvent";
 import CreateDeleteCheck from "../components/modalWindows/deleteEventCheck";
 import CreateAfterDelete from "../components/modalWindows/deleteEventAfter";
-import IslandSelected from "../components/islandSelected/islandSelected";
 import EventDone from "../components/eventDone";
 import FetchEvent from "../components/fetchEvent";
 import EntryIsland from "../components/entryIsland";
-import HandleHideEventJoin from "../components/handleHideEventJoin";
 import HandleFileChange from "../components/handleFileChange";
 import HandleSave from "../components/handleSave";
 import EventName from "../components/createEvent/eventName/eventName";
 import EventDetail from "../components/createEvent/detail/detail";
 import Daytime from "../components/createEvent/daytime/daytime";
-import SelectIsland from "../components/selectIsland";
 import IslandValueOption from "../components/islandValueOption";
 
 export default function EventEdit() {

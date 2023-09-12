@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../../../styles/island/createIsland.module.css";
 import AddHandler from "./addHandler";
 

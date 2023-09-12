@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import LogSt from "../../components/cookie/logSt";
 import styles from "../../styles/island/all.module.css";
 import { Link, useNavigate, useParams } from "react-router-dom";

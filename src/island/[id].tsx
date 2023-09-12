@@ -4,7 +4,6 @@ import styles from "../styles/island/islandDetail.module.css";
 import CreateSendingMessage from "../components/modalWindows/createSendingMessage";
 import CreateResidentApplication from "../components/modalWindows/createResidentApplication";
 import { useNavigate, useParams } from "react-router-dom";
-import { supabase } from "../createClient";
 import LogSt from "../components/cookie/logSt";
 import GetCookieID from "../components/cookie/getCookieId";
 import FetchIslandDetail from "../components/fetchIslandDetail";

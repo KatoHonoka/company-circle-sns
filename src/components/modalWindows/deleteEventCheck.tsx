@@ -1,5 +1,4 @@
 import styles from "../../styles/createDeletingCheck.module.css";
-import { supabase } from "../../createClient";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import HandleInputChange from "./handleInputChange";

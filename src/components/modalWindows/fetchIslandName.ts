@@ -1,4 +1,3 @@
-import { supabase } from "../../createClient";
 
 // 現在の島・イベントの名前を取得
 export default async function FetchIslandName(supabase, paramsID, setIslandName) {

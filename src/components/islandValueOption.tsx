@@ -1,11 +1,9 @@
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
-import { supabase } from "../createClient";
 import styles from "../styles/island/createIsland.module.css";
 import FetchIsland from "./fetchIsland";
 import { handleSelectChange } from "./handleSelectChange";
 import { addNameHandler } from "./addNameHandler";
 import { deleteNameHandler } from "./deleteNameHandler";
-import HandleHideEventJoin from "./handleHideEventJoin";
 import SelectedIslandJoin from "./selectedIslandJoin";
 
 export default function IslandValueOption({
