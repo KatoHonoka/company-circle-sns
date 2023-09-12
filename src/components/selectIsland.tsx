@@ -1,5 +1,4 @@
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
-import { supabase } from "../createClient";
 import styles from "../styles/island/createIsland.module.css";
 import FetchIsland from "./fetchIsland";
 import { handleSelectChange } from "./handleSelectChange";

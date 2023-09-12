@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import CreateThread from "../components/modalWindows/createThread";
 import FetchIslandThreads from "../components/hooks/FetchIslandThreads";
 import Thread from "../components/Thread";

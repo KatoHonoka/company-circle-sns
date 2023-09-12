@@ -4,7 +4,6 @@ import firebase from "firebase/compat/app";
 import styles from "../../styles/Chat.module.css";
 import GetCookieID from "../cookie/getCookieId";
 import { supabase } from "../../createClient";
-import { set } from "date-fns";
 
 const SendMessages = ({ threadID }: { threadID: number }) => {
   const [text, setText] = useState("");

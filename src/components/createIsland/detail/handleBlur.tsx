@@ -1,7 +1,7 @@
 // カーソル外したときに未入力だったらエラー表示
 // eventでも使用
 
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 export default function HandleDetailBlur({ detail, setError, type }) {
   useEffect(() => {

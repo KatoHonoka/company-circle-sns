@@ -3,7 +3,6 @@ import MenubarEvent from "../components/menubar/menubarEvent/menubarEvent";
 import styles from "../styles/island/islandDetail.module.css";
 import CreateResidentApplication from "../components/modalWindows/createResidentApplication";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { supabase } from "../createClient";
 import LogSt from "../components/cookie/logSt";
 import { Event } from "../types/members";
 import EventSendingMessage from "../components/modalWindows/eventSendingMessage";

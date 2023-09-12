@@ -1,7 +1,5 @@
 // タグを削除する
 
-import React from "react";
-
 export default function DeleteHandler({
   index,
   setSelectedValue,

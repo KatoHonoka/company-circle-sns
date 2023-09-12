@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import styles from "../../styles/createDeletePage.module.css";
 
 // closeDeleteModalは×ボタンを押下したときの関数、nextOpenは完了系ボタン（イベントを削除する）を押したときの関数

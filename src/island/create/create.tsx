@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "../../styles/island/createIsland.module.css";
 import ConvertKanaJ from "../../components/changeKana";
 import AddTag from "../../components/createIsland/addtag/addtag";
