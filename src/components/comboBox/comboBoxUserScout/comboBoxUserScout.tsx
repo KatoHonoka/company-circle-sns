@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import styles from "../../../styles/island/createIsland.module.css";
 import HandleInputChange from "../comboBoxUser/handleInputChange";
 import AddHandler from "../comboBoxTag/addHandler";
@@ -118,3 +118,4 @@ export default function ComboBoxUserScout({
     </div>
   );
 }
+// eslint-disable-next-line react-hooks/exhaustive-deps

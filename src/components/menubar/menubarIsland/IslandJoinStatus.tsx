@@ -24,3 +24,4 @@ export default function IslandJoinStatus({ userID, paramsID, setIsJoined }) {
 
   return null;
 }
+// eslint-disable-next-line react-hooks/exhaustive-deps

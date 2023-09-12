@@ -30,3 +30,4 @@ export default function BelongIsland() {
     </>
   );
 }
+// eslint-disable-next-line react-hooks/exhaustive-deps

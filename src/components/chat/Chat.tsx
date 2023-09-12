@@ -197,3 +197,4 @@ const Chat = () => {
 };
 
 export default Chat;
+// eslint-disable-next-line react-hooks/exhaustive-deps

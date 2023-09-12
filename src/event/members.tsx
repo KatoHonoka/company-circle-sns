@@ -56,3 +56,4 @@ export default function EventMembers() {
     </>
   );
 }
+// eslint-disable-next-line react-hooks/exhaustive-deps

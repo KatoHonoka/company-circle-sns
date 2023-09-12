@@ -85,3 +85,4 @@ export default function SearchDisplay({ word, radio }) {
     </div>
   );
 }
+// eslint-disable-next-line react-hooks/exhaustive-deps

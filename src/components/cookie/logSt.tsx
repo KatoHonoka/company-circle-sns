@@ -12,3 +12,4 @@ export default function LogSt() {
     CheckLoginStatus(loginStatus, navigate);
   }, []);
 }
+// eslint-disable-next-line react-hooks/exhaustive-deps

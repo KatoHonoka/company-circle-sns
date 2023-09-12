@@ -12,3 +12,4 @@ export default function PartUseEffectIsland({ paramsID, onIslandDataFetched }) {
 
   return null;
 }
+// eslint-disable-next-line react-hooks/exhaustive-deps

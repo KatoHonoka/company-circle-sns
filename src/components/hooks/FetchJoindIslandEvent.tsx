@@ -104,3 +104,4 @@ function FetchJoindIslandEvent() {
 }
 
 export default FetchJoindIslandEvent;
+// eslint-disable-next-line react-hooks/exhaustive-deps

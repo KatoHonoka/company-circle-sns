@@ -98,3 +98,4 @@ export default function CreateResidentApplication({
     </>
   );
 }
+// eslint-disable-next-line react-hooks/exhaustive-deps

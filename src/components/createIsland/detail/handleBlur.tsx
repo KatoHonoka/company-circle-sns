@@ -26,3 +26,4 @@ export default function HandleDetailBlur({ detail, setError, type }) {
 
   return null;
 }
+// eslint-disable-next-line react-hooks/exhaustive-deps

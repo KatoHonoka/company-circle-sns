@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { supabase } from "../../createClient";
 import { thread } from "../../types/thread";
 
@@ -19,3 +19,4 @@ function FetchIslandThreads(id: number, eqName: string) {
 }
 
 export default FetchIslandThreads;
+// eslint-disable-next-line react-hooks/exhaustive-deps

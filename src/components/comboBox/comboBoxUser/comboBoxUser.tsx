@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import styles from "../../../styles/island/createIsland.module.css";
 import HandleInputChange from "./handleInputChange";
 import AddHandler from "../comboBoxTag/addHandler";

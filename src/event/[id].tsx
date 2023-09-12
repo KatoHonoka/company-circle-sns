@@ -175,3 +175,4 @@ export default function EventDetail() {
     </div>
   );
 }
+// eslint-disable-next-line react-hooks/exhaustive-deps

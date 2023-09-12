@@ -289,3 +289,4 @@ const Header = () => {
 };
 
 export default Header;
+// eslint-disable-next-line react-hooks/exhaustive-deps
