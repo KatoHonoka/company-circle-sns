@@ -73,3 +73,4 @@ export default function EventEverything() {
     </>
   );
 }
+// eslint-disable-next-line react-hooks/exhaustive-deps

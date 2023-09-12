@@ -18,3 +18,4 @@ function FetchEventThreads(id: number, eqName: string) {
 }
 
 export default FetchEventThreads;
+// eslint-disable-next-line react-hooks/exhaustive-deps

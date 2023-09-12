@@ -15,3 +15,4 @@ export default function HandleBlur({ startDate, endDate, setError }) {
 
   return null;
 }
+// eslint-disable-next-line react-hooks/exhaustive-deps

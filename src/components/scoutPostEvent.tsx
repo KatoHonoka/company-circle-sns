@@ -65,3 +65,4 @@ export default function ScoutPostEvent({ table }: { table: string }) {
     </div>
   );
 }
+// eslint-disable-next-line react-hooks/exhaustive-deps

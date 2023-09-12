@@ -12,3 +12,4 @@ const ScrollToTop = () => {
 };
 
 export default ScrollToTop;
+// eslint-disable-next-line react-hooks/exhaustive-deps

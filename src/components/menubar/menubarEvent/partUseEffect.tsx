@@ -41,3 +41,4 @@ export default function PartUseEffect() {
 
   return { isJoined, event, eventImage, uniqueEvents };
 }
+// eslint-disable-next-line react-hooks/exhaustive-deps

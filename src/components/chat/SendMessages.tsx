@@ -78,3 +78,4 @@ const SendMessages = ({ threadID }: { threadID: number }) => {
 };
 
 export default SendMessages;
+// eslint-disable-next-line react-hooks/exhaustive-deps

@@ -74,3 +74,4 @@ export default function ScoutPostIsland({ table }: { table: string }) {
   </div>
 );
 }
+// eslint-disable-next-line react-hooks/exhaustive-deps

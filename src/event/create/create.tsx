@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import LogSt from "../../components/cookie/logSt";
 import styles from "../../styles/event/create.module.css";
 import EventName from "../../components/createEvent/eventName/eventName";

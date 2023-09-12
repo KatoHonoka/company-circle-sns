@@ -114,3 +114,4 @@ const deletedIslandName = joinIslandData[index]; // 参加島の名前を取得�
         </div>
       );
 }
+// eslint-disable-next-line react-hooks/exhaustive-deps
