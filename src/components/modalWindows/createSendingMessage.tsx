@@ -25,9 +25,7 @@ export default function CreateSendingMessage({
   useEffect(() => {
     fetchPostData();
     fetchIslandNameData();
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
-
   }, []);
 
   // posts, postedByに入れるため、送信する側のpostIDを取得する

@@ -12,9 +12,7 @@ export default function IslandAll() {
   useEffect(() => {
     // 島のデータを取得する関数
     FetchIslandsData(islands, setIslands);
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
-
   }, []);
 
   return (

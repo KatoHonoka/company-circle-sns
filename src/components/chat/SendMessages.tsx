@@ -29,9 +29,7 @@ const SendMessages = ({ threadID }: { threadID: number }) => {
       setUser(userData[0]);
     };
     fetchUser();
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
-
   }, []);
 
   // userがundefinedの場合エラーを回避

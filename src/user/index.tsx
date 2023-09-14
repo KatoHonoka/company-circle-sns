@@ -44,9 +44,7 @@ export default function UserEdit() {
     setTimeout(() => {
       setFocus("conPw");
     }, 0);
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
-
   }, [editMode]);
 
   const fetchUsers = async () => {

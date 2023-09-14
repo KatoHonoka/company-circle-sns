@@ -36,9 +36,7 @@ export default function Message() {
 
   useEffect(() => {
     fetchUserMessagesData();
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
-
   }, []);
 
   const fetchUserMessagesData = async () => {
@@ -50,9 +48,7 @@ export default function Message() {
     if (circleElement) {
       circleElement.style.backgroundImage = `url('${imageUrl}')`;
     }
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
-
   }, [imageUrl]);
 
   const fetchPosts = async (messagesPosteBy) => {
@@ -219,9 +215,7 @@ export default function Message() {
 
       return () => clearTimeout(timer);
     }
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
-
   }, [errorMessage]);
 
   return (

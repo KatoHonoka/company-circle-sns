@@ -19,9 +19,7 @@ export default function Login() {
       navigate("/");
       window.location.reload();
     }
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
-
   }, []);
 
   return (

@@ -26,9 +26,7 @@ export default function EventAll() {
     FetchIslandName(islandName, setIslandName, paramsID);
     // 島のイベントを取得
     FetchEventDataIsland({ paramsID, setEvents, events });
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
-
   }, [paramsID]);
 
   return (

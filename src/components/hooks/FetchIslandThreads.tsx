@@ -15,9 +15,7 @@ function FetchIslandThreads(id: number, eqName: string) {
       setThreads(threads as thread[]);
     };
     fetchThread();
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
-
   }, []);
   return threads;
 }

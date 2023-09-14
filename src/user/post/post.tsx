@@ -18,9 +18,7 @@ export default function UserPost() {
   useEffect(() => {
     //メッセージ受信
     FetchMsg(userID, setMessages);
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
-
   }, []);
 
   return (

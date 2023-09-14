@@ -47,9 +47,7 @@ export default function IslandEdit() {
 
   useEffect(() => {
     setChosenTag(islandTags);
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
-
   }, [islandTags]);
 
   // 島を沈没させてもよろしいですか？モーダルウィンドウを表示
@@ -86,9 +84,7 @@ export default function IslandEdit() {
   useEffect(() => {
     fetchIslandEditData();
     fetchData();
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
-
   }, []);
 
   // データベースからislands情報を取得
