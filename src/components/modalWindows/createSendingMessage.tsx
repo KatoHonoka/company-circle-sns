@@ -22,6 +22,7 @@ export default function CreateSendingMessage({
   const paramsID = parseInt(params.id);
   const userID = GetCookieID();
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchPostData();
     fetchIslandNameData();
@@ -91,4 +92,3 @@ export default function CreateSendingMessage({
     </>
   );
 }
-// eslint-disable-next-line react-hooks/exhaustive-deps

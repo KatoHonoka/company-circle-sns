@@ -10,12 +10,6 @@ import HandleEventJoin from "./handleEventJoin";
 export default function ScoutPostEvent({ table }: { table: string }) {
   LogSt();
 
-  // メッセージの型定義
-  interface Message {
-    id: number;
-    postedBy: number;
-  }
-
   const params = useParams();
   const paramsID = parseInt(params.id);
 
@@ -28,6 +22,7 @@ export default function ScoutPostEvent({ table }: { table: string }) {
 
   const navigate = useNavigate();
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     FetchEventData(paramsID, setEventName, setEvent, setIsButtonsVisible);
   }, [paramsID]);
@@ -65,4 +60,3 @@ export default function ScoutPostEvent({ table }: { table: string }) {
     </div>
   );
 }
-// eslint-disable-next-line react-hooks/exhaustive-deps

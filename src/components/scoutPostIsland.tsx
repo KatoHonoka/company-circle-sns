@@ -9,14 +9,7 @@ import HandleIslandJoin from "./handleIslandJoin";
 
 export default function ScoutPostIsland({ table }: { table: string }) {
   LogSt();
-
-  // メッセージの型定義
-  interface Message {
-    id: number;
-    postedBy: number;
-  }
   
-
   const params = useParams();
   const paramsID = parseInt(params.id);
 
@@ -29,7 +22,7 @@ export default function ScoutPostIsland({ table }: { table: string }) {
 
   const navigate = useNavigate();
 
-
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     FetchIslandData(paramsID, setIslandName, setIsland, setIsButtonsVisible)
   }, [paramsID]);
@@ -74,4 +67,3 @@ export default function ScoutPostIsland({ table }: { table: string }) {
   </div>
 );
 }
-// eslint-disable-next-line react-hooks/exhaustive-deps

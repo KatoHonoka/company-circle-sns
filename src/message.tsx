@@ -34,6 +34,7 @@ export default function Message() {
     navi(-1);
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchUserMessagesData();
   }, []);
@@ -42,6 +43,7 @@ export default function Message() {
     await FetchUserMessages(id, setUserMessages, fetchPosts);
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     let circleElement = document.getElementById("img");
     if (circleElement) {
@@ -167,7 +169,7 @@ export default function Message() {
       return;
     }
 
-    const { data, error } = await supabase
+    const { error } = await supabase
       .from("posts")
       .select("id")
       .eq("userID", userCookie)
@@ -205,6 +207,7 @@ export default function Message() {
     setShowTextArea(false);
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (errorMessage) {
       const timer = setTimeout(() => {
@@ -333,4 +336,3 @@ export default function Message() {
     </div>
   );
 }
-// eslint-disable-next-line react-hooks/exhaustive-deps

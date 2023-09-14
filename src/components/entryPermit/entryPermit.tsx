@@ -20,11 +20,13 @@ export default function EntryPermit({ table }: { table: string }) {
   };
 
   //  ポストに届いている参加申請を取得
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchData({ table: table, paramsID: paramsID, setMessage: setMessage });
   }, []);
 
   //参加申請を送ってきたユーザーの情報を取得
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     getUsers({ message, setUser });
   }, [message]);
@@ -84,4 +86,3 @@ export default function EntryPermit({ table }: { table: string }) {
     </div>
   );
 }
-// eslint-disable-next-line react-hooks/exhaustive-deps

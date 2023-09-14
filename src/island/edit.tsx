@@ -27,7 +27,7 @@ export default function IslandEdit() {
   const [isDeleteCheckOpen, setIsDeleteCheckOpen] = useState(false);
   const [isAfterDeleteOpen, setIsAfterDeleteOpen] = useState(false);
   const [inputValue, setInputValue] = useState("");
-  const [chosenTag, setChosenTag] = useState([]);
+  const [, setChosenTag] = useState([]);
 
   const [islandName, setIslandName] = useState("");
   const [detail, setDetail] = useState("");
@@ -45,6 +45,7 @@ export default function IslandEdit() {
     { Name: string; NameKana: string; tagNameKana: string }[]
   >([]);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     setChosenTag(islandTags);
   }, [islandTags]);
@@ -398,4 +399,3 @@ export default function IslandEdit() {
     </div>
   );
 }
-// eslint-disable-next-line react-hooks/exhaustive-deps

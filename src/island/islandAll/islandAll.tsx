@@ -9,6 +9,7 @@ export default function IslandAll() {
   LogSt();
   const [islands, setIslands] = useState([]);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     // 島のデータを取得する関数
     FetchIslandsData(islands, setIslands);
@@ -47,4 +48,3 @@ export default function IslandAll() {
     </div>
   );
 }
-// eslint-disable-next-line react-hooks/exhaustive-deps

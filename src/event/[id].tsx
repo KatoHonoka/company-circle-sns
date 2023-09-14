@@ -27,6 +27,7 @@ export default function EventDetail() {
 
   const [islandArray, setIslandArray] = useState([]);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchEventDetailData(); 
     fetchIslandData(eventId);
@@ -175,4 +176,3 @@ export default function EventDetail() {
     </div>
   );
 }
-// eslint-disable-next-line react-hooks/exhaustive-deps

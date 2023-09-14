@@ -45,6 +45,7 @@ const Chat = () => {
     navi(-1);
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     firestore
       .collection("chats")
@@ -138,9 +139,9 @@ const Chat = () => {
           </div>
         ) : (
           <div className={styles.flex}>
-            <a onClick={pageBack} className={styles.link}>
+            <div onClick={pageBack} className={styles.link}>
               <p>＜</p>
-            </a>
+            </div>
             <p className={styles.title}>{threadTitle}</p>
             <button
               onClick={handleEditClick}
@@ -197,4 +198,3 @@ const Chat = () => {
 };
 
 export default Chat;
-// eslint-disable-next-line react-hooks/exhaustive-deps

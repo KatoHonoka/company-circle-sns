@@ -2,7 +2,7 @@ import { supabase } from "../../createClient";
 
 // messagesテーブルにメッセージを保存
 export default async function SendMessage(postID, message, postedID, closeModal) {
-    const { data, error } = await supabase
+    const { error } = await supabase
     .from("messages")
     .insert([
         {

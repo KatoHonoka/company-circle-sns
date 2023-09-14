@@ -4,9 +4,11 @@ import { thread } from "../../types/thread";
 
 function FetchIslandThreads(id: number, eqName: string) {
   const [threads, setThreads] = useState<thread[]>([]);
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const fetchThread = async () => {
-      let { data: threads, error } = await supabase
+      let { data: threads } = await supabase
         .from("threads")
         .select(`id, threadTitle,  islands(thumbnail)`)
         .eq(eqName, id)
@@ -19,4 +21,3 @@ function FetchIslandThreads(id: number, eqName: string) {
 }
 
 export default FetchIslandThreads;
-// eslint-disable-next-line react-hooks/exhaustive-deps

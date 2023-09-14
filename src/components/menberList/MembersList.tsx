@@ -33,6 +33,7 @@ export default function MembersList({
   const loginID = Number(tmpLoginID);
 
   // DBからデータを取得
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (!loginUser) {
       fetchMembers({
@@ -88,4 +89,3 @@ export default function MembersList({
     </div>
   );
 }
-// eslint-disable-next-line react-hooks/exhaustive-deps
