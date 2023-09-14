@@ -34,8 +34,8 @@ export default function Message() {
     navi(-1);
   };
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchUserMessagesData();
   }, []);
 
@@ -43,8 +43,8 @@ export default function Message() {
     await FetchUserMessages(id, setUserMessages, fetchPosts);
   };
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     let circleElement = document.getElementById("img");
     if (circleElement) {
       circleElement.style.backgroundImage = `url('${imageUrl}')`;
@@ -207,8 +207,8 @@ export default function Message() {
     setShowTextArea(false);
   };
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     if (errorMessage) {
       const timer = setTimeout(() => {
         setErrorMessage("");

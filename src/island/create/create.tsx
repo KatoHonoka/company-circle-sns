@@ -16,11 +16,12 @@ export default function IslandCreate() {
   LogSt();
   const [nameAlreadyError, setNameAlreadyError] = useState("");
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     // データベースから全ユーザー名前取得
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     FetchUsers(ConvertKanaJ, setUserOptions);
     // データベースから全タグ名取得
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     FetchTags(setTagOptions);
   }, []);
 

@@ -22,8 +22,8 @@ export default function PartUseEffect() {
   const userID = GetCookieID();
   const [uniqueEvents, setUniqueEvents] = useState([]);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const fetchEventData = async () => {
       const eventData = await FetchIslandData(paramsID);
       if (eventData) {

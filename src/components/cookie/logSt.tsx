@@ -8,8 +8,8 @@ export default function LogSt() {
   const navigate = useNavigate();
 
   // 未ログイン時、ログイン画面にリダイレクト
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     CheckLoginStatus(loginStatus, navigate);
   }, []);
 }

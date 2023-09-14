@@ -4,8 +4,8 @@
 import { useEffect } from "react";
 
 export default function HandleDetailBlur({ detail, setError, type }) {
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     async function handleNameBlur() {
       if (type === "island") {
         if (detail.trim() === "") {

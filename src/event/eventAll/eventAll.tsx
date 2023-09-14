@@ -11,9 +11,9 @@ export default function EventEverything() {
 
   const [events, setEvents] = useState([]);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     // イベントのデータを取得する関数
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     FetchEventsData(events, setEvents);
   }, []);
 

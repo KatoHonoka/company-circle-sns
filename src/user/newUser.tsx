@@ -8,8 +8,8 @@ export default function NewUser() {
   const [loginStatus] = useCookies(["loginSt"]);
 
   // ログイン済みの場合、トップページにリダイレクト
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const status = loginStatus.loginSt;
     if (status === "true") {
       navigate("/");

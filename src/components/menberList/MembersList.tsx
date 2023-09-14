@@ -33,8 +33,8 @@ export default function MembersList({
   const loginID = Number(tmpLoginID);
 
   // DBからデータを取得
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     if (!loginUser) {
       fetchMembers({
         table,

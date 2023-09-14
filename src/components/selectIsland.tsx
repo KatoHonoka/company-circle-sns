@@ -24,8 +24,8 @@ export default function SelectIsland({
     await FetchIsland(setIslands, islandID);
   };
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchIslandData();
   }, []);
 

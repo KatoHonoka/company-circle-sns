@@ -16,14 +16,13 @@ export default function CreateThread({
   const [eventName, setEventName] = useState("");
   const [isThreadTitleEmpty, setIsThreadTitleEmpty] = useState(true);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     // スレッド名の入力状態に応じてisThreadTitleEmptyの値を更新
     setIsThreadTitleEmpty(threadTitle.trim().length === 0);
   }, [threadTitle]);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchData();
   }, [islandID, eventID]);
 

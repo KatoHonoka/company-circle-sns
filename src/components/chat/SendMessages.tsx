@@ -18,8 +18,8 @@ const SendMessages = ({ threadID }: { threadID: number }) => {
     icon: string;
   }
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const fetchUser = async () => {
       let { data: userData } = (await supabase
         .from("users")

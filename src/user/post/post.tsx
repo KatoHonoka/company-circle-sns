@@ -15,9 +15,9 @@ export default function UserPost() {
   const navigate = useNavigate();
   const userID = GetCookieID();
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     //メッセージ受信
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     FetchMsg(userID, setMessages);
   }, []);
 
