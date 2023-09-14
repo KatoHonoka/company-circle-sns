@@ -9,7 +9,9 @@ export default function LogSt() {
 
   // 未ログイン時、ログイン画面にリダイレクト
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     CheckLoginStatus(loginStatus, navigate);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, []);
 }

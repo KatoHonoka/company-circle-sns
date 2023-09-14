@@ -28,10 +28,12 @@ export default function EventDetail() {
   const [islandArray, setIslandArray] = useState([]);
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchEventDetailData(); 
     fetchIslandData(eventId);
     fetchEventPostData();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [eventId, userId]);
 
 

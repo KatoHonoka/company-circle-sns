@@ -23,11 +23,12 @@ export default function EventAll() {
 
   useEffect(() => {
     // 島の名前を取得する関数
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     FetchIslandName(islandName, setIslandName, paramsID);
     // 島のイベントを取得
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     FetchEventDataIsland({ paramsID, setEvents, events });
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [paramsID]);
 
   return (

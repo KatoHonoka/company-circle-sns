@@ -5,7 +5,6 @@ import { useEffect } from "react";
 
 export default function HandleDetailBlur({ detail, setError, type }) {
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     async function handleNameBlur() {
       if (type === "island") {
         if (detail.trim() === "") {
@@ -23,6 +22,9 @@ export default function HandleDetailBlur({ detail, setError, type }) {
     }
 
     handleNameBlur();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [detail, setError]);
 
   return null;

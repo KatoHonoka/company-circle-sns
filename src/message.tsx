@@ -35,8 +35,10 @@ export default function Message() {
   };
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchUserMessagesData();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, []);
 
   const fetchUserMessagesData = async () => {
@@ -44,11 +46,13 @@ export default function Message() {
   };
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     let circleElement = document.getElementById("img");
     if (circleElement) {
       circleElement.style.backgroundImage = `url('${imageUrl}')`;
     }
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [imageUrl]);
 
   const fetchPosts = async (messagesPosteBy) => {
@@ -208,7 +212,6 @@ export default function Message() {
   };
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     if (errorMessage) {
       const timer = setTimeout(() => {
         setErrorMessage("");
@@ -216,6 +219,9 @@ export default function Message() {
 
       return () => clearTimeout(timer);
     }
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [errorMessage]);
 
   return (

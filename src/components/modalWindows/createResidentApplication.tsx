@@ -29,10 +29,12 @@ export default function CreateResidentApplication({
   const [postID, setPostID] = useState(null);
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchPostData();
     fetchislnadNameData();
     fetchIslandPostData();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, []);
 
   //ログインユーザーのポストIDを取得し、postByに格納

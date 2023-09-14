@@ -14,12 +14,14 @@ export default function Login() {
 
   // ログイン済みの場合、トップページにリダイレクト
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     const status = loginStatus.loginSt;
     if (status === "true") {
       navigate("/");
       window.location.reload();
     }
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, []);
 
   return (

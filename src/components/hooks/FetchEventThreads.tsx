@@ -5,7 +5,6 @@ function FetchEventThreads(id: number, eqName: string) {
   const [threads, setThreads] = useState([]);
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     const fetchThread = async () => {
       let { data: threads } = await supabase
         .from("threads")
@@ -15,6 +14,9 @@ function FetchEventThreads(id: number, eqName: string) {
       setThreads(threads);
     };
     fetchThread();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, []);
   return threads;
 }

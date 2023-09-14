@@ -18,11 +18,12 @@ export default function IslandCreate() {
 
   useEffect(() => {
     // データベースから全ユーザー名前取得
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     FetchUsers(ConvertKanaJ, setUserOptions);
     // データベースから全タグ名取得
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     FetchTags(setTagOptions);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, []);
 
   // 島作成する

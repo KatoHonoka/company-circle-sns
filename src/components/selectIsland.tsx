@@ -25,8 +25,10 @@ export default function SelectIsland({
   };
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchIslandData();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, []);
 
   // 選択項目
