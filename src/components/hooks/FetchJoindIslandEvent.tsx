@@ -14,14 +14,15 @@ function FetchJoindIslandEvent() {
   const tmpUserID = GetCookieID();
   const userID = Number(tmpUserID);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  
   useEffect(() => {
     //参加している島とイベントを取得して格納
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     SubFetchIsEve({ userID, setCombi });
   }, []);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchUserInfo();
   }, [combi]);
 

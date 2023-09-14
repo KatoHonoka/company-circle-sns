@@ -5,8 +5,8 @@ import { thread } from "../../types/thread";
 function FetchIslandThreads(id: number, eqName: string) {
   const [threads, setThreads] = useState<thread[]>([]);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const fetchThread = async () => {
       let { data: threads } = await supabase
         .from("threads")

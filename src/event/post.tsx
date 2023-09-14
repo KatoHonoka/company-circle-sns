@@ -78,8 +78,8 @@ export default function EventPost() {
     }
   };
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchMsg();
   }, []);
 

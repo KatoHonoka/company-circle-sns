@@ -27,8 +27,8 @@ export default function CreateSendingScout({
   const params = useParams();
   const paramsID = parseInt(params.id);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     comboBoxData();
   }, [islandMembers]);
 

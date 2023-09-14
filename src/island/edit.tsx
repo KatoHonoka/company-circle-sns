@@ -45,8 +45,8 @@ export default function IslandEdit() {
     { Name: string; NameKana: string; tagNameKana: string }[]
   >([]);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     setChosenTag(islandTags);
   }, [islandTags]);
 
@@ -82,6 +82,7 @@ export default function IslandEdit() {
   };
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchIslandEditData();
     fetchData();
   }, []);

@@ -22,8 +22,8 @@ export default function EventEdit() {
   const id = useParams();
   const fetchEventID = id.id;
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchEventData();
     entryIslandData();
     // addIsland();
@@ -114,8 +114,8 @@ export default function EventEdit() {
   };
 
   // CSS部分で画像URLを変更（imgタグ以外で挿入すれば、円形にしても画像が収縮表示されない）
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     let circleElement = document.getElementById("img");
     if (circleElement) {
       circleElement.style.backgroundImage = `url('${imageUrl}')`;
@@ -179,8 +179,8 @@ export default function EventEdit() {
     );
   };
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     if (errorMessage) {
       const timer = setTimeout(() => {
         setErrorMessage("");

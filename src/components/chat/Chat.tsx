@@ -27,6 +27,7 @@ const Chat = () => {
   }
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchThreadUser({
       id,
       setThreadTitle,
@@ -45,8 +46,8 @@ const Chat = () => {
     navi(-1);
   };
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     firestore
       .collection("chats")
       .where("threadID", "==", threadID)

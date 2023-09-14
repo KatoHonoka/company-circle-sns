@@ -28,8 +28,8 @@ export default function CreateResidentApplication({
   const [postedID, setPostedID] = useState(null);
   const [postID, setPostID] = useState(null);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchPostData();
     fetchislnadNameData();
     fetchIslandPostData();

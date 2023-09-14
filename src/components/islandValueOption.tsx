@@ -34,8 +34,8 @@ export default function IslandValueOption({
     await FetchIsland(setIslands, islandJoinID);
   };
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchIslandData();
   }, []);
 

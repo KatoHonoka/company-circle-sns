@@ -25,8 +25,8 @@ export default function IslandDetail() {
   );
   const [tags, setTags] = useState([]);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchIslandDetailData();
     fetchIslandPostData();
     fetchTagsData();
