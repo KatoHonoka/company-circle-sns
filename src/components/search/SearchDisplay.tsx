@@ -25,8 +25,10 @@ export default function SearchDisplay({ word, radio }) {
   };
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchData();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [word, radio]);
 
   const fetchData = async () => {
@@ -40,7 +42,6 @@ export default function SearchDisplay({ word, radio }) {
     }
   };
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     filterData({
       word,
       radio,
@@ -48,6 +49,9 @@ export default function SearchDisplay({ word, radio }) {
       eventData,
       setCom,
     });
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [word, radio, islandData, eventData]);
 
   return (

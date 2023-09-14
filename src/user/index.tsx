@@ -37,7 +37,6 @@ export default function UserEdit() {
 
   //メールアドレスと社員番号が既に登録されているか確認するために取得する
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     reset();
     check();
     fetchUsers();
@@ -45,6 +44,9 @@ export default function UserEdit() {
     setTimeout(() => {
       setFocus("conPw");
     }, 0);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [editMode]);
 
   const fetchUsers = async () => {

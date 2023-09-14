@@ -22,8 +22,10 @@ export default function CreateThread({
   }, [threadTitle]);
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchData();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [islandID, eventID]);
 
   const fetchData = async () => {

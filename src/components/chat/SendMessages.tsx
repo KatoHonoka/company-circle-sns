@@ -19,7 +19,6 @@ const SendMessages = ({ threadID }: { threadID: number }) => {
   }
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     const fetchUser = async () => {
       let { data: userData } = (await supabase
         .from("users")
@@ -30,6 +29,9 @@ const SendMessages = ({ threadID }: { threadID: number }) => {
       setUser(userData[0]);
     };
     fetchUser();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, []);
 
   // userがundefinedの場合エラーを回避

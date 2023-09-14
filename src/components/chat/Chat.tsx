@@ -28,13 +28,14 @@ const Chat = () => {
 
   useEffect(() => {
     fetchThreadUser({
-      // eslint-disable-next-line react-hooks/exhaustive-deps
       id,
       setThreadTitle,
-      // eslint-disable-next-line react-hooks/exhaustive-deps
       userID,
       setUser,
     });
+    
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, []);
 
   const userName = `${user?.familyName}${user?.firstName}`;
@@ -50,7 +51,6 @@ const Chat = () => {
   useEffect(() => {
     firestore
       .collection("chats")
-      // eslint-disable-next-line react-hooks/exhaustive-deps
       .where("threadID", "==", threadID)
       .orderBy("postedAt", "desc")
       .limit(20)
@@ -81,6 +81,9 @@ const Chat = () => {
           setMessages(snapShots as chat[]);
         }, 400);
       });
+
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, []);
 
   const handleNameBlur = async () => {

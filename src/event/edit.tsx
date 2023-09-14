@@ -23,10 +23,12 @@ export default function EventEdit() {
   const fetchEventID = id.id;
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchEventData();
     entryIslandData();
     // addIsland();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, []);
 
   const navigate = useNavigate();
@@ -115,11 +117,13 @@ export default function EventEdit() {
 
   // CSS部分で画像URLを変更（imgタグ以外で挿入すれば、円形にしても画像が収縮表示されない）
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     let circleElement = document.getElementById("img");
     if (circleElement) {
       circleElement.style.backgroundImage = `url('${imageUrl}')`;
     }
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [imageUrl]);
 
   // 画像ファイル選択したら、表示画像に反映
@@ -180,7 +184,6 @@ export default function EventEdit() {
   };
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     if (errorMessage) {
       const timer = setTimeout(() => {
         setErrorMessage("");
@@ -188,6 +191,9 @@ export default function EventEdit() {
 
       return () => clearTimeout(timer);
     }
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [errorMessage]);
 
   // 参加サークルをuserEntryStatusテーブルに追加

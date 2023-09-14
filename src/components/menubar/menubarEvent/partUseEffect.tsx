@@ -23,7 +23,6 @@ export default function PartUseEffect() {
   const [uniqueEvents, setUniqueEvents] = useState([]);
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     const fetchEventData = async () => {
       const eventData = await FetchIslandData(paramsID);
       if (eventData) {
@@ -38,6 +37,9 @@ export default function PartUseEffect() {
     });
 
     fetchEventData();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [paramsID]);
 
   return { isJoined, event, eventImage, uniqueEvents };

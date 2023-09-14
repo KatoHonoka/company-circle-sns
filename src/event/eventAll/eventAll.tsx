@@ -13,8 +13,10 @@ export default function EventEverything() {
 
   useEffect(() => {
     // イベントのデータを取得する関数
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     FetchEventsData(events, setEvents);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, []);
 
   return (

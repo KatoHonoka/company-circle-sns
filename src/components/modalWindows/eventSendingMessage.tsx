@@ -25,10 +25,12 @@ export default function EventSendingMessage({
   const userID = GetCookieID();
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchPostData();
     fetchEventNameData();
     fetchEventPostData();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, []);
 
   // postedByに入れるため、送信する側のpostIDを取得する
