@@ -78,6 +78,7 @@ export default function EventPost() {
     }
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchMsg();
   }, []);
@@ -156,4 +157,3 @@ export default function EventPost() {
     </>
   );
 }
-// eslint-disable-next-line react-hooks/exhaustive-deps

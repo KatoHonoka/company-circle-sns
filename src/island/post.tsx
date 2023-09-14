@@ -23,6 +23,7 @@ export default function IslandPost() {
   const navigate = useNavigate();
 
   //メッセージ受信
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchMsg({ paramsID, setMessages });
   }, []);
@@ -97,4 +98,3 @@ export default function IslandPost() {
     </div>
   );
 }
-// eslint-disable-next-line react-hooks/exhaustive-deps

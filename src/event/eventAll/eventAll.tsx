@@ -11,6 +11,7 @@ export default function EventEverything() {
 
   const [events, setEvents] = useState([]);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     // イベントのデータを取得する関数
     FetchEventsData(events, setEvents);
@@ -73,4 +74,3 @@ export default function EventEverything() {
     </>
   );
 }
-// eslint-disable-next-line react-hooks/exhaustive-deps

@@ -1,7 +1,7 @@
 import { supabase } from "../createClient";
 
 export default  async function HandleReject(paramsID, id, setIsButtonsVisible){
-      const { data: updatedMessage, error: updateError } = await supabase
+      const { error: updateError } = await supabase
         .from("messages")
         .update({ isAnswered: true })
         .eq("id", paramsID)

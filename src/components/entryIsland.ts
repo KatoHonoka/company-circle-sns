@@ -49,7 +49,7 @@ export default async function EntryIsland(fetchEventID, setIslandJoinID, setEven
   const islandNames = islandData.map((island) => island.islandName);
   const joinedNames = islandNames.join(", ");
 
-  const islandJoinName = islandNames.map((islandName, i) => islandName.islandName)
+  islandNames.map((islandName, i) => islandName.islandName)
   
   setEventJoin(joinedNames);
 }

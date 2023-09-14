@@ -14,7 +14,7 @@ export default async function HandleIslandJoin(paramsID, id, setIsButtonsVisible
       }
   
       // メッセージのisAnsweredをtrueに更新
-      const { data: updatedMessage, error: updateError } = await supabase
+      const { error: updateError } = await supabase
         .from("messages")
         .update({ isAnswered: true })
         .eq("id", paramsID)
@@ -42,7 +42,7 @@ export default async function HandleIslandJoin(paramsID, id, setIsButtonsVisible
       }
   
       // userEntryStatus テーブルにデータを格納
-      const { data: entryStatus, error: entryStatusError } = await supabase
+      const { error: entryStatusError } = await supabase
         .from("userEntryStatus")
         .insert([
           {

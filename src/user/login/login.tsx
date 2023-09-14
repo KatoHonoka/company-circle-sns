@@ -13,6 +13,7 @@ export default function Login() {
   const [loginStatus] = useCookies(["loginSt"]);
 
   // ログイン済みの場合、トップページにリダイレクト
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const status = loginStatus.loginSt;
     if (status === "true") {
@@ -81,4 +82,3 @@ export default function Login() {
     </div>
   );
 }
-// eslint-disable-next-line react-hooks/exhaustive-deps

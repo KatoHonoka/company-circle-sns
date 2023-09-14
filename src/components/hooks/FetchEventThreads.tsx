@@ -3,6 +3,8 @@ import { supabase } from "../../createClient";
 
 function FetchEventThreads(id: number, eqName: string) {
   const [threads, setThreads] = useState([]);
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const fetchThread = async () => {
       let { data: threads } = await supabase
@@ -18,4 +20,3 @@ function FetchEventThreads(id: number, eqName: string) {
 }
 
 export default FetchEventThreads;
-// eslint-disable-next-line react-hooks/exhaustive-deps

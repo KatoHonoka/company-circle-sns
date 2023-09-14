@@ -28,7 +28,6 @@ export default function EventCreate() {
     setStartDate,
     endDate,
     setEndDate,
-    islandTags,
     setIslandTags,
     createHandler,
   } = useCreateEventHandler();

@@ -16,6 +16,7 @@ export default function IslandCreate() {
   LogSt();
   const [nameAlreadyError, setNameAlreadyError] = useState("");
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     // データベースから全ユーザー名前取得
     FetchUsers(ConvertKanaJ, setUserOptions);
@@ -33,13 +34,10 @@ export default function IslandCreate() {
     setUserOptions,
     tagOptions,
     setTagOptions,
-    islandMembers,
     setIslandMembers,
     detail,
     setDetail,
-    islandTags,
     setIslandTags,
-    tagNames,
     setTagNames,
     createHandler,
   } = useCreateIslandHandler();
@@ -141,4 +139,3 @@ export default function IslandCreate() {
     </div>
   );
 }
-// eslint-disable-next-line react-hooks/exhaustive-deps

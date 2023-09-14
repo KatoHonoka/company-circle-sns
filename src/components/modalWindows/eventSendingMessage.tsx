@@ -24,6 +24,7 @@ export default function EventSendingMessage({
 
   const userID = GetCookieID();
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchPostData();
     fetchEventNameData();
@@ -94,4 +95,3 @@ export default function EventSendingMessage({
     </>
   );
 }
-// eslint-disable-next-line react-hooks/exhaustive-deps

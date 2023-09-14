@@ -17,9 +17,9 @@ export default function CreateSendingScout({
 }) {
   const [message, setMessage] = useState("");
   const [users, setUsers] = useState<newUsersData>();
-  const [post, setPost] = useState();
-  const [postBy, setPostBy] = useState(0);
-  const [islandName, setIslandName] = useState("");
+  const [post] = useState();
+  const [postBy] = useState(0);
+  const [islandName] = useState("");
   const [islandMembers, setIslandMembers] = useState<newUsersData>([]);
   const [empty, setEmpty] = useState("");
   const [messageError, setmessageError] = useState("");
@@ -27,6 +27,7 @@ export default function CreateSendingScout({
   const params = useParams();
   const paramsID = parseInt(params.id);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     comboBoxData();
   }, [islandMembers]);
@@ -70,7 +71,7 @@ export default function CreateSendingScout({
           console.log("全ユーザーが見つかりません");
         } else {
           // メッセージでここからスカウトを既に送っているものを取得
-          const { data: fetchedSentUser, error: sentUserError } = await supabase
+          const { data: fetchedSentUser } = await supabase
             .from("messages")
             .select("*")
             .eq("scout", true)
@@ -208,4 +209,3 @@ export default function CreateSendingScout({
     </>
   );
 }
-// eslint-disable-next-line react-hooks/exhaustive-deps

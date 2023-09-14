@@ -21,6 +21,7 @@ export default function EventAll() {
     window.location.reload();
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     // 島の名前を取得する関数
     FetchIslandName(islandName, setIslandName, paramsID);
@@ -89,4 +90,3 @@ export default function EventAll() {
     </div>
   );
 }
-// eslint-disable-next-line react-hooks/exhaustive-deps

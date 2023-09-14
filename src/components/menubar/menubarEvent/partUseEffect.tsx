@@ -22,6 +22,7 @@ export default function PartUseEffect() {
   const userID = GetCookieID();
   const [uniqueEvents, setUniqueEvents] = useState([]);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const fetchEventData = async () => {
       const eventData = await FetchIslandData(paramsID);
@@ -41,4 +42,3 @@ export default function PartUseEffect() {
 
   return { isJoined, event, eventImage, uniqueEvents };
 }
-// eslint-disable-next-line react-hooks/exhaustive-deps

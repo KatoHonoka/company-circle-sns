@@ -25,9 +25,8 @@ export default function IslandValueOption({
   const [selectedValues, setSelectedValues] = useState([]);
   const [tempSelectedValues, setTempSelectedValues] = useState([]); // 一時的な選択値を格納する配列
   const [selectError, setSelectError] = useState("");
-  const [selectedIslandNames, setSelectedIslandNames] = useState([]); // 既に選択されている島の名前を保持
 
-  const islandID_N = Number(islandJoinID);
+  Number(islandJoinID);
 
 
   // selectタグの選択項目を取得
@@ -35,6 +34,7 @@ export default function IslandValueOption({
     await FetchIsland(setIslands, islandJoinID);
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchIslandData();
   }, []);
@@ -130,4 +130,3 @@ const addNameHandlerData =  async () => {
     </>
   );
 }
-// eslint-disable-next-line react-hooks/exhaustive-deps

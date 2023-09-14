@@ -22,6 +22,7 @@ export default function EventEdit() {
   const id = useParams();
   const fetchEventID = id.id;
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchEventData();
     entryIslandData();
@@ -106,10 +107,6 @@ export default function EventEdit() {
     await EntryIsland(fetchEventID, setIslandJoinID, setEventJoin);
   };
 
-  // const handleHideEventJoinData = async () => {
-  //   await HandleHideEventJoin(fetchEventID, setEventJoin);
-  // };
-
   //ひとつ前のページに戻る
   const navi = useNavigate();
   const pageBack = () => {
@@ -117,6 +114,7 @@ export default function EventEdit() {
   };
 
   // CSS部分で画像URLを変更（imgタグ以外で挿入すれば、円形にしても画像が収縮表示されない）
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     let circleElement = document.getElementById("img");
     if (circleElement) {
@@ -129,31 +127,6 @@ export default function EventEdit() {
     event: React.ChangeEvent<HTMLInputElement>,
   ) => {
     await HandleFileChange(event, setImageUrl);
-  };
-
-  // 編集ボタンを押下、イベント名を変更
-  const handleEventNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setEventName(e.target.value);
-  };
-
-  // 編集ボタンを押下、開催日時(startDate)を変更
-  const handleStartDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setStartDate(e.target.value);
-  };
-
-  // 編集ボタンを押下、開催日時(endDate)を変更
-  const handleEndDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setEndDate(e.target.value);
-  };
-
-  // 編集ボタンを押下、イベント詳細内容を変更
-  const handleEventDetailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setEventDetail(e.target.value);
-  };
-
-  // 編集ボタンを押下、参加サークルの変更
-  const handleEventJoinChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setEventJoin(e.target.value);
   };
 
   // 保存処理の実装
@@ -186,7 +159,6 @@ export default function EventEdit() {
     }
 
     handleSaveData();
-    createHandler();
     addIsland();
 
     pageBack();
@@ -207,16 +179,7 @@ export default function EventEdit() {
     );
   };
 
-  const createHandler = async () => {
-    const eventData = {
-      eventName: eventName,
-      startDate: startDate,
-      endDate: endDate,
-      detail: eventDetail,
-      status: "false",
-    };
-  };
-
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (errorMessage) {
       const timer = setTimeout(() => {
@@ -376,4 +339,3 @@ export default function EventEdit() {
     </div>
   );
 }
-// eslint-disable-next-line react-hooks/exhaustive-deps
