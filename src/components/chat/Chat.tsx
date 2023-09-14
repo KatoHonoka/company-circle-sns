@@ -33,9 +33,7 @@ const Chat = () => {
       userID,
       setUser,
     });
-  
     // eslint-disable-next-line react-hooks/exhaustive-deps
-
   }, []);
 
   const userName = `${user?.familyName}${user?.firstName}`;
@@ -81,9 +79,7 @@ const Chat = () => {
           setMessages(snapShots as chat[]);
         }, 400);
       });
-
       // eslint-disable-next-line react-hooks/exhaustive-deps
-
   }, []);
 
   const handleNameBlur = async () => {
