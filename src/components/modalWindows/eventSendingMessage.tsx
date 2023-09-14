@@ -28,9 +28,7 @@ export default function EventSendingMessage({
     fetchPostData();
     fetchEventNameData();
     fetchEventPostData();
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
-
   }, []);
 
   // postedByに入れるため、送信する側のpostIDを取得する

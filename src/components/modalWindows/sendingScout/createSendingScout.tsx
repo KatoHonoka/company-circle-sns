@@ -29,9 +29,7 @@ export default function CreateSendingScout({
 
   useEffect(() => {
     comboBoxData();
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
-
   }, [islandMembers]);
 
   const comboBoxData = async () => {

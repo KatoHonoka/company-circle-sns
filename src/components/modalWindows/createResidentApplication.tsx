@@ -32,9 +32,7 @@ export default function CreateResidentApplication({
     fetchPostData();
     fetchislnadNameData();
     fetchIslandPostData();
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
-
   }, []);
 
   //ログインユーザーのポストIDを取得し、postByに格納

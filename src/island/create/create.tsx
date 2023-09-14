@@ -21,9 +21,7 @@ export default function IslandCreate() {
     FetchUsers(ConvertKanaJ, setUserOptions);
     // データベースから全タグ名取得
     FetchTags(setTagOptions);
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
-
   }, []);
 
   // 島作成する

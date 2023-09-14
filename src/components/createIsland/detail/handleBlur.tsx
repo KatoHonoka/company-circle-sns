@@ -22,9 +22,7 @@ export default function HandleDetailBlur({ detail, setError, type }) {
     }
 
     handleNameBlur();
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
-
   }, [detail, setError]);
 
   return null;
