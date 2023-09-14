@@ -27,10 +27,11 @@ const Chat = () => {
   }
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchThreadUser({
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       id,
       setThreadTitle,
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       userID,
       setUser,
     });
@@ -47,9 +48,9 @@ const Chat = () => {
   };
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     firestore
       .collection("chats")
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       .where("threadID", "==", threadID)
       .orderBy("postedAt", "desc")
       .limit(20)
